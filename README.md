@@ -16,7 +16,7 @@ cookie.setCookie(content,expires);  //content:内容;expires:过期时间(天)
 cookie.getCookie()
 ```
  
-#####删除cookie
+##### 删除cookie
 ```
 cookie.delCookie();
 ```
