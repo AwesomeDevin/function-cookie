@@ -6,7 +6,7 @@
 import Cookie from '../modules/cookie';   //导入cookie模块
 var cookie = new Cookie('cookieName');   //实例化  参数:cookie name
 ```
-##### 设置cookie/删除cookie
+##### 设置cookie/修改cookie
 ```
 cookie.setCookie(content,expires);  //content:内容;expires:过期时间(天)
 ```
