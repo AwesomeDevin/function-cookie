@@ -13,11 +13,10 @@ class Cookie {
     const data = new Date();
     data.setDate(data.getDate() + expiredays);
     document.cookie = `${this.name}=${escape(cookieValue)
-}${(expiredays == null) ? '' : `;expires=${data.toGMTString()}`}`;
+}${(expiredays == null) ? '' : `;expires=${data.toGMTString()}`}path=/`;
   }
 
   getCookie() {
-    console.log(document.cookie);
     if (document.cookie.length > 0) {
       let startIndex = document.cookie.indexOf(`${this.name}=`);
       if (startIndex !== -1) {
@@ -31,9 +30,9 @@ class Cookie {
     }
     return null;
   }
-  
-   delCookie() {
-    console.log('delete');
+
+  delCookie() {
+    // console.log('delete');
     const exp = new Date();
     exp.setTime(exp.getTime() - 1);
     document.cookie = `${this.name}=0;expires=${new Date(0).toUTCString()}`;
