@@ -8,7 +8,7 @@ var cookie = new Cookie('cookieName');   //实例化  参数:cookie name
 ```
 ##### 设置cookie/修改cookie
 ```
-cookie.setCookie(content,expires);  //content:内容;expires:过期时间(天)
+cookie.setCookie(content,expires);  //content:内容->string;expires:过期时间(天)->int
 ```
  
 ##### 获取cookie
