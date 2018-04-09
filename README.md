@@ -1,4 +1,4 @@
-# function-cookie
+# function-cookie   【该模块已集成到vue-devin中，可使用npm install vue-devin】
 使用es6封装的一个用于cookie增删改查的js模块
 
 #### 使用方法
