@@ -33,9 +33,10 @@ class Cookie {
 
   delCookie() {
     // console.log('delete');
-    const exp = new Date();
-    exp.setTime(exp.getTime() - 1);
-    document.cookie = `${this.name}=0;expires=${new Date(0).toUTCString()}`;
+    // const exp = new Date();
+    // exp.setTime(exp.getTime() - 1);
+    // document.cookie = `${this.name}=0;expires=-1`;
+    this.setCookie(0,-10)
   }
 }
 
