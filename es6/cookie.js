@@ -13,7 +13,7 @@ class Cookie {
     const data = new Date();
     data.setDate(data.getDate() + expiredays);
     document.cookie = `${this.name}=${escape(cookieValue)
-}${(expiredays == null) ? '' : `;expires=${data.toGMTString()}`}path=/`;
+}${(expiredays == null) ? '' : `;expires=${data.toGMTString()}`};path=/`;
   }
 
   getCookie() {
